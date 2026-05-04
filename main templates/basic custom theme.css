@@ -200,3 +200,238 @@ a[href$="/Ps1cho/"]:hover {
   color: #b6ffe3 !important;
   text-shadow: 0 0 10px rgba(96, 214, 170, 0.45);
 }
+
+/* --- Rival Tag --- */
+a[href*="/users/GEN3RATED_R"]:not(:has(img)),
+a[href$="/GEN3RATED_R"]:not(:has(img)),
+a[href$="/GEN3RATED_R/"]:not(:has(img)) {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+}
+
+a[href*="/users/GEN3RATED_R"]:not(:has(img))::after,
+a[href$="/GEN3RATED_R"]:not(:has(img))::after,
+a[href$="/GEN3RATED_R/"]:not(:has(img))::after {
+  content: "🙄 Rival";
+  font-weight: 700;
+  font-size: 0.68rem;
+  padding: 0.14rem 0.5rem;
+  border-radius: 0.55rem;
+  margin-left: 6px;
+  background: rgba(214, 96, 96, 0.16) !important;
+  color: #ffe9e9 !important;
+  border: 1px solid rgba(214, 96, 96, 0.28) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 6px 18px rgba(214, 96, 96, 0.12);
+  text-shadow: 0 0 6px rgba(214, 96, 96, 0.08);
+  pointer-events: none;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+a[href*="/users/GEN3RATED_R"]:hover:not(:has(img))::after,
+a[href$="/GEN3RATED_R"]:hover:not(:has(img))::after,
+a[href$="/GEN3RATED_R/"]:hover:not(:has(img))::after {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #e36f6f, #f59a9a) !important;
+  color: #330606 !important;
+  box-shadow: 0 10px 30px rgba(214, 96, 96, 0.35) !important;
+}
+
+a[href*="/users/GEN3RATED_R"]:has(img)::after,
+a[href$="/GEN3RATED_R"]:has(img)::after,
+a[href$="/GEN3RATED_R/"]:has(img)::after {
+  content: none !important;
+}
+
+a[href*="/users/GEN3RATED_R"],
+a[href$="/GEN3RATED_R"],
+a[href$="/GEN3RATED_R/"] {
+  color: #e87f7f !important;
+  text-shadow: 0 0 6px rgba(214, 96, 96, 0.25);
+  transition: color 0.18s ease, text-shadow 0.18s ease;
+}
+
+a[href*="/users/GEN3RATED_R"]:hover,
+a[href$="/GEN3RATED_R"]:hover,
+a[href$="/GEN3RATED_R/"]:hover {
+  color: #ffb6b6 !important;
+  text-shadow: 0 0 10px rgba(214, 96, 96, 0.45);
+}
+
+/* --- Bestie Tag --- */
+a[href*="/users/TheNyeru"]:not(:has(img)),
+a[href$="/TheNyeru"]:not(:has(img)),
+a[href$="/TheNyeru/"]:not(:has(img)) {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+}
+
+a[href*="/users/TheNyeru"]:not(:has(img))::after,
+a[href$="/TheNyeru"]:not(:has(img))::after,
+a[href$="/TheNyeru/"]:not(:has(img))::after {
+  content: "💞 Bestie";
+  font-weight: 700;
+  font-size: 0.68rem;
+  padding: 0.14rem 0.5rem;
+  border-radius: 0.55rem;
+  margin-left: 6px;
+  background: rgba(214, 96, 170, 0.16) !important;
+  color: #ffe9f6 !important;
+  border: 1px solid rgba(214, 96, 170, 0.28) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 6px 18px rgba(214, 96, 170, 0.12);
+  text-shadow: 0 0 6px rgba(214, 96, 170, 0.08);
+  pointer-events: none;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+a[href*="/users/TheNyeru"]:hover:not(:has(img))::after,
+a[href$="/TheNyeru"]:hover:not(:has(img))::after,
+a[href$="/TheNyeru/"]:hover:not(:has(img))::after {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #e36fb8, #f59acf) !important;
+  color: #330626 !important;
+  box-shadow: 0 10px 30px rgba(214, 96, 170, 0.35) !important;
+}
+
+a[href*="/users/TheNyeru"]:has(img)::after,
+a[href$="/TheNyeru"]:has(img)::after,
+a[href$="/TheNyeru/"]:has(img)::after {
+  content: none !important;
+}
+
+a[href*="/users/TheNyeru"],
+a[href$="/TheNyeru"],
+a[href$="/TheNyeru/"] {
+  color: #e87fc3 !important;
+  text-shadow: 0 0 6px rgba(214, 96, 170, 0.25);
+  transition: color 0.18s ease, text-shadow 0.18s ease;
+}
+
+a[href*="/users/TheNyeru"]:hover,
+a[href$="/TheNyeru"]:hover,
+a[href$="/TheNyeru/"]:hover {
+  color: #ffb6e3 !important;
+  text-shadow: 0 0 10px rgba(214, 96, 170, 0.45);
+}
+
+/* --- Glass Body --- */
+.ant-collapse-header {
+  background: rgba(0, 0, 0, 0.22) !important;
+  backdrop-filter: blur(30px) saturate(150%);
+  -webkit-backdrop-filter: blur(30px) saturate(150%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* --- Glass Buttons --- */
+.flex {
+  justify-content: center !important;
+}
+
+.flex .ant-btn {
+  background: rgba(0, 0, 0, 0.25) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border: 1px solid rgba(46, 204, 113, 0.25) !important;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 0 6px rgba(46, 204, 113, 0.15);
+  border-radius: 6px;
+  color: #eaf6ff;
+}
+
+.flex .ant-btn:hover {
+  box-shadow: 0 0 18px rgba(46, 204, 113, 0.35);
+  transform: scale(1.05);
+}
+
+/* --- CC Tags --- */
+.ant-tag {
+  background: rgba(15, 25, 40, 0.4) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(46, 204, 113, 0.25);
+  color: #e0e8ff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.ant-tag:hover {
+  box-shadow: 0 0 12px rgba(46, 204, 113, 0.6), 0 0 24px rgba(46, 204, 113, 0.4);
+  border-color: rgba(46, 204, 113, 0.5);
+  transform: translateY(-2px);
+}
+
+/* --- Menu Item --- */
+.ant-dropdown-menu-item .ant-btn {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Definitions --- */
+.ant-collapse:not(.ant-collapse-content .ant-collapse):not([data-greeting])
+  > .ant-collapse-item:nth-child(1)
+  .ant-collapse-header-text::before {
+  content: "☰ ";
+  margin-right: 8px;
+}
+
+/* --- Discussion --- */
+.ant-collapse:not(.ant-collapse-content .ant-collapse):not([data-greeting])
+  > .ant-collapse-item:nth-child(2)
+  .ant-collapse-header-text::before {
+  content: "💬 ";
+  margin-right: 8px;
+}
+
+/* --- Public Chats --- */
+.ant-collapse:not(.ant-collapse-content .ant-collapse):not([data-greeting])
+  > .ant-collapse-item:nth-child(3)
+  .ant-collapse-header-text::before {
+  content: "👥 ";
+  margin-right: 8px;
+}
+
+/* --- Gallery --- */
+.ant-collapse:not(.ant-collapse-content .ant-collapse):not([data-greeting])
+  > .ant-collapse-item:nth-child(4)
+  .ant-collapse-header-text::before {
+  content: "🖼️ ";
+  margin-right: 8px;
+}
+
+/* --- Stages --- */
+.ant-collapse:not(.ant-collapse-content .ant-collapse):not([data-greeting])
+  > .ant-collapse-item:nth-child(5)
+  .ant-collapse-header-text::before {
+  content: "🔮 ";
+  margin-right: 8px;
+}
+
+/* --- Lorebooks --- */
+.ant-collapse:not(.ant-collapse-content .ant-collapse):not([data-greeting])
+  > .ant-collapse-item:nth-child(6)
+  .ant-collapse-header-text::before {
+  content: "📚 ";
+  margin-right: 8px;
+}
+
+/* --- Versions --- */
+.ant-collapse:not(.ant-collapse-content .ant-collapse):not([data-greeting])
+  > .ant-collapse-item:nth-child(7)
+  .ant-collapse-header-text::before {
+  content: "🕐 ";
+  margin-right: 8px;
+}

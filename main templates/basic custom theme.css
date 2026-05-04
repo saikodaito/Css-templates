@@ -75,3 +75,128 @@
 .ant-dropdown-menu-item-only-child div {
   background: rgba(255, 255, 255, 0.15) !important;
 }
+
+/* --- Image Shadow Overlay Removal --- */
+.ant-image-mask {
+  background: transparent !important;
+  opacity: 0 !important;
+}
+
+.ant-image-mask-info {
+  display: none !important;
+}
+
+/* --- NSFW Tag Icon --- */
+.ant-tag.ant-tag-error {
+  font-size: 0 !important;
+  padding: 0 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 18px !important;
+  cursor: pointer !important;
+}
+
+.ant-tag.ant-tag-error::before {
+  content: "🔞" !important;
+  font-size: 14px !important;
+  line-height: 1 !important;
+}
+
+.ant-tag.ant-tag-error:hover {
+  filter: brightness(1.15);
+}
+
+/* --- Tooltip Glass --- */
+.ant-tooltip-inner {
+  background: rgba(15, 25, 20, 0.6) !important;
+  color: #eafff1 !important;
+  border: 1px solid rgba(120, 255, 170, 0.25) !important;
+  box-shadow: 0 0 12px rgba(120, 255, 170, 0.2) !important;
+  border-radius: 8px !important;
+  font-family: 'Poppins', sans-serif !important;
+  transition: box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.ant-tooltip-inner:hover {
+  background: rgba(20, 40, 30, 0.7) !important;
+  box-shadow: 0 0 18px rgba(120, 255, 170, 0.35) !important;
+}
+
+/* --- Hide Nominate Button --- */
+button.ant-btn.galaxy-bg,
+button[aria-describedby=":rb6d:"],
+button[style*="galaxy_hd-min.jpg"] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/* --- Author Tag --- */
+a[href*="/users/Ps1cho"]:not(:has(img)),
+a[href$="/Ps1cho"]:not(:has(img)),
+a[href$="/Ps1cho/"]:not(:has(img)) {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+}
+
+a[href*="/users/Ps1cho"]:not(:has(img))::after,
+a[href$="/Ps1cho"]:not(:has(img))::after,
+a[href$="/Ps1cho/"]:not(:has(img))::after {
+  content: "🪄 Author";
+  font-weight: 700;
+  font-size: 0.68rem;
+  padding: 0.14rem 0.5rem;
+  border-radius: 0.55rem;
+  margin-left: 6px;
+  background: rgba(96, 214, 170, 0.16) !important;
+  color: #e9fff6 !important;
+  border: 1px solid rgba(96, 214, 170, 0.28) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 6px 18px rgba(96, 214, 170, 0.12);
+  text-shadow: 0 0 6px rgba(96, 214, 170, 0.08);
+  pointer-events: none;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease,
+    color 0.18s ease;
+}
+
+a[href*="/users/Ps1cho"]:hover:not(:has(img))::after,
+a[href$="/Ps1cho"]:hover:not(:has(img))::after,
+a[href$="/Ps1cho/"]:hover:not(:has(img))::after {
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #6fe3b8, #9af5cf) !important;
+  color: #063326 !important;
+  box-shadow: 0 10px 30px rgba(96, 214, 170, 0.35) !important;
+}
+
+a[href*="/users/Ps1cho"]:has(img)::after,
+a[href$="/Ps1cho"]:has(img)::after,
+a[href$="/Ps1cho/"]:has(img)::after {
+  content: none !important;
+}
+
+/* --- Author Link Color --- */
+a[href*="/users/Ps1cho"],
+a[href$="/Ps1cho"],
+a[href$="/Ps1cho/"] {
+  color: #7fe8c3 !important;
+  text-shadow: 0 0 6px rgba(96, 214, 170, 0.25);
+  transition: color 0.18s ease, text-shadow 0.18s ease;
+}
+
+a[href*="/users/Ps1cho"]:hover,
+a[href$="/Ps1cho"]:hover,
+a[href$="/Ps1cho/"]:hover {
+  color: #b6ffe3 !important;
+  text-shadow: 0 0 10px rgba(96, 214, 170, 0.45);
+}

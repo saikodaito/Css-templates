@@ -3,6 +3,14 @@
    core/glass-ui.css
    ============================================= */
 
+/* --- Variables --- */
+:root {
+  --ps-accent:       rgba(255, 255, 255, 0.18); /* border color */
+  --ps-glow:         rgba(255, 255, 255, 0.08); /* box-shadow base */
+  --ps-glow-hover:   rgba(255, 255, 255, 0.18); /* box-shadow hover */
+  --ps-tag-bg:       rgba(255, 255, 255, 0.05); /* tag background */
+}
+
 /* --- Header --- */
 .ant-layout-header,
 .ant-menu-overflow,
@@ -109,18 +117,18 @@
 
 /* --- Tooltip Glass --- */
 .ant-tooltip-inner {
-  background: rgba(15, 25, 20, 0.6) !important;
-  color: #eafff1 !important;
-  border: 1px solid rgba(120, 255, 170, 0.25) !important;
-  box-shadow: 0 0 12px rgba(120, 255, 170, 0.2) !important;
+  background: rgba(15, 15, 15, 0.6) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid var(--ps-accent) !important;
+  box-shadow: 0 0 12px var(--ps-glow) !important;
   border-radius: 8px !important;
   font-family: 'Poppins', sans-serif !important;
   transition: box-shadow 0.25s ease, background 0.25s ease;
 }
 
 .ant-tooltip-inner:hover {
-  background: rgba(20, 40, 30, 0.7) !important;
-  box-shadow: 0 0 18px rgba(120, 255, 170, 0.35) !important;
+  background: rgba(25, 25, 25, 0.7) !important;
+  box-shadow: 0 0 18px var(--ps-glow-hover) !important;
 }
 
 /* --- Hide Nominate Button --- */
@@ -345,31 +353,31 @@ a[href$="/TheNyeru/"]:hover {
   background: rgba(0, 0, 0, 0.25) !important;
   backdrop-filter: blur(8px) !important;
   -webkit-backdrop-filter: blur(8px) !important;
-  border: 1px solid rgba(46, 204, 113, 0.25) !important;
+  border: 1px solid var(--ps-accent) !important;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
-  box-shadow: 0 0 6px rgba(46, 204, 113, 0.15);
+  box-shadow: 0 0 6px var(--ps-glow);
   border-radius: 6px;
   color: #eaf6ff;
 }
 
 .flex .ant-btn:hover {
-  box-shadow: 0 0 18px rgba(46, 204, 113, 0.35);
+  box-shadow: 0 0 18px var(--ps-glow-hover);
   transform: scale(1.05);
 }
 
 /* --- CC Tags --- */
 .ant-tag {
-  background: rgba(15, 25, 40, 0.4) !important;
+  background: var(--ps-tag-bg) !important;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  border: 1px solid rgba(46, 204, 113, 0.25);
+  border: 1px solid var(--ps-accent);
   color: #e0e8ff;
   transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
 }
 
 .ant-tag:hover {
-  box-shadow: 0 0 12px rgba(46, 204, 113, 0.6), 0 0 24px rgba(46, 204, 113, 0.4);
-  border-color: rgba(46, 204, 113, 0.5);
+  box-shadow: 0 0 12px var(--ps-glow-hover), 0 0 24px var(--ps-glow);
+  border-color: var(--ps-accent);
   transform: translateY(-2px);
 }
 
@@ -379,6 +387,10 @@ a[href$="/TheNyeru/"]:hover {
   border: none !important;
   box-shadow: none !important;
 }
+
+/* =============================================
+   BODY ICONS
+   ============================================= */
 
 /* --- Definitions --- */
 .ant-collapse:not(.ant-collapse-content .ant-collapse):not([data-greeting])

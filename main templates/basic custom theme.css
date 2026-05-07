@@ -444,29 +444,4 @@ a[href$="/TheNyeru/"]:hover {
 }
 
 /* -- Footer removal */
-.ant-layout-footer { display: none !important; }
-
-/* -- Icon replacement -- */
-.ant-menu-overflow-item[data-menu-id*="home"] { background: none !important; padding: 0 !important; margin: 0 !important; }
-.ant-menu-overflow-item[data-menu-id*="home"] img { display: none !important; }
-
-.ant-menu-overflow-item[data-menu-id*="home"] .ant-menu-title-content { position: relative; display: inline-block; padding: 2px 6px; line-height: 1; width: 42px; height: 42px; }
-
-.ant-menu-overflow-item[data-menu-id*="home"] .ant-menu-title-content::before,
-.ant-menu-overflow-item[data-menu-id*="home"] .ant-menu-title-content::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  width: 42px;
-  height: 42px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: opacity 0.4s ease;
-}
-
-.ant-menu-overflow-item[data-menu-id*="home"] .ant-menu-title-content::before { background-image: url("https://raw.githubusercontent.com/saikodaito/Css-templates/main/main%20templates/icon%20willow%20a.png"); opacity: 1; }
-.ant-menu-overflow-item[data-menu-id*="home"] .ant-menu-title-content::after  { background-image: url("https://raw.githubusercontent.com/saikodaito/Css-templates/main/main%20templates/icon%20willow%20b.png"); opacity: 0; }
-
-.ant-menu-overflow-item[data-menu-id*="home"]:hover .ant-menu-title-content::before { opacity: 0; }
-.ant-menu-overflow-item[data-menu-id*="home"]:hover .ant-menu-title-content::after  { opacity: 1; }
+.ant-layout-footer{display:none!important}

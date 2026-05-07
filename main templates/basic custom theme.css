@@ -444,10 +444,9 @@ a[href$="/TheNyeru/"]:hover {
 }
 
 /* -- Footer removal */
-<style>.ant-layout-footer { display: none !important; }</style>
+.ant-layout-footer { display: none !important; }
 
 /* -- Icon replacement -- */
-<style>
 .ant-menu-overflow-item[data-menu-id*="home"] { background: none !important; padding: 0 !important; margin: 0 !important; }
 .ant-menu-overflow-item[data-menu-id*="home"] img { display: none !important; }
 
@@ -471,4 +470,3 @@ a[href$="/TheNyeru/"]:hover {
 
 .ant-menu-overflow-item[data-menu-id*="home"]:hover .ant-menu-title-content::before { opacity: 0; }
 .ant-menu-overflow-item[data-menu-id*="home"]:hover .ant-menu-title-content::after  { opacity: 1; }
-</style>

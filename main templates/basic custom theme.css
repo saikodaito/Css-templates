@@ -355,34 +355,6 @@ a[href$="/TheNyeru/"]:hover {
   transform: translateY(-2px);
 }
 
-/* dropdown bs */
-
-.ant-dropdown,.ant-dropdown-menu{
-  background:rgba(0,0,0,.1)!important;
-  backdrop-filter:blur(30px)!important;
-  -webkit-backdrop-filter:blur(30px)!important;
-  box-shadow:none!important;
-  border:1px solid rgba(255,255,255,.1)!important;
-  border-radius:12px!important;
-}
-.ant-dropdown-menu-item{
-  color:inherit!important;
-  text-shadow:0 1px 3px rgba(0,0,0,.3)!important;
-  transition:background .2s ease;
-}
-.ant-dropdown-menu-item:hover{
-  background:rgba(255,255,255,.08)!important;
-}
-.ant-dropdown-menu-item-only-child div{
-  background:rgba(255,255,255,.15)!important;
-}
-/* --- Menu Item --- */
-.ant-dropdown-menu-item .ant-btn {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
 /* =============================================
    BODY ICONS
    ============================================= */
@@ -442,6 +414,3 @@ a[href$="/TheNyeru/"]:hover {
   content: "🕐 ";
   margin-right: 8px;
 }
-
-/* -- Footer removal */
-.ant-layout-footer{display:none!important}

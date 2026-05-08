@@ -539,3 +539,81 @@ a[href$="/TheNyeru/"]:hover {
 .ant-menu-overflow-item[data-menu-id*="home"]:hover .ant-menu-title-content::after {
   opacity: 1;
 }
+
+/* Fav button */
+button.ant-btn:has(.anticon-star svg path[d*="M664.8 561.6"]) {
+  position: fixed !important;
+  right: 2vw !important;
+  bottom: 2vh !important;
+  z-index: 2147483647 !important;
+  width: fit-content;
+  min-width: 48px;
+  max-width: 220px;
+  height: auto;
+  padding: .5em 1em;
+  font-size: 1rem;
+  border: 2px solid var(--ps-fav);
+  border-radius: 8px;
+  cursor: pointer !important;
+  box-shadow: 0 0 8px var(--ps-fav);
+  animation: btn-glow 2.5s ease-in-out infinite, btn-tilt 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@media (max-width: 768px) {
+  button.ant-btn.ant-btn-icon-only:has(.anticon-star svg path[d*="zM"]) {
+    right: 4vw !important;
+    bottom: 4vh !important;
+    min-width: 40px;
+    max-width: 160px;
+    padding: .3em .6em;
+    font-size: .9rem;
+  }
+}
+
+@keyframes btn-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 8px var(--ps-fav),
+      0 0 16px color-mix(in srgb, var(--ps-fav) 50%, transparent);
+  }
+  50% {
+    box-shadow:
+      0 0 20px var(--ps-fav),
+      0 0 32px color-mix(in srgb, var(--ps-fav) 50%, transparent);
+  }
+}
+
+@keyframes btn-tilt {
+  0%, 100% { transform: rotate(0deg); }
+  25%       { transform: rotate(-2deg); }
+  75%       { transform: rotate(2deg); }
+}
+
+/* Favorited state — icon fill */
+button.ant-btn:has(.anticon-star svg path[d*="M664.8 561.6"]) .anticon-star svg {
+  fill: var(--ps-fav);
+  stroke: none;
+}
+
+/* Unfavorited state — kill animations */
+button.ant-btn:has(.anticon-star):not(:has(svg path[d*="zM"])) {
+  animation: none !important;
+  transform: none !important;
+}
+
+button.ant-btn:has(.anticon-star):not(:has(svg path[d*="zM"])) .anticon-star svg {
+  animation: none !important;
+  filter: none !important;
+  overflow: hidden;
+}
+
+button.ant-btn:has(.anticon-star):not(:has(svg path[d*="zM"])) .anticon-star svg path {
+  fill: currentColor !important;
+  stroke: none;
+}
+
+button.ant-btn:has(.anticon-star):not(:has(svg path[d*="zM"]))::after {
+  animation: none !important;
+  display: none !important;
+}
